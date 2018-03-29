@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>a new webpage!</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+      <h1>welcome to music notes, {{ user.username }}!</h1>
+      {% for post in posts %}
+      <div><p>{{ post.author.username }} shared a score with you: <b> {{ post.body }}</b></p></div>
+      {% endfor %}
+{% endblock %}
