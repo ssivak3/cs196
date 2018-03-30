@@ -23,35 +23,35 @@ input[type="text"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
-    border: 2px dashed steelblue;
+    border: 2px solid steelblue;
 }
 
 input[type="Subtitle"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
-    border: 2px dashed steelblue;
+    border: 2px solid steelblue;
 }
 
 input[type="Composer"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
-    border: 2px dashed steelblue;
+    border: 2px solid steelblue;
 }
 
 input[type="Lyricist"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
-    border: 2px dashed steelblue;
+    border: 2px solid steelblue;
 }
 
 input[type="Copyright"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
-    border: 2px dashed steelblue;
+    border: 2px solid steelblue;
 }
 
 input[type="Submit and get started!"] {
