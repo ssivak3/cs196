@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-      <h1>welcome to music notes, {{ user.username }}!</h1>
+      <h1><center>welcome to cadenza, {{ user.username }}!</center></h1>
       {% for post in posts %}
       <div><p>{{ post.author.username }} shared a score with you: <b> {{ post.body }}</b></p></div>
       {% endfor %}
+<style> html {
+  width: 100%;
+  height: 100%;
+  font-family:'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  color: #800000;
+  -webkit-font-smoothing: antialiased;    background: #D4F8F4;
+} </style>
+
 {% endblock %}
