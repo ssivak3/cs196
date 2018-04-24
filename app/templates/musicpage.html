@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>textBox</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="{{url_for('static', filename='vextab-div.js')}}"></script>
+
+</head>
+
+<body>
+    <div class="vex-tabdiv" editor="true">{{ notes }}</div>
+    <!-- <input type="text" name="textbox" size="100">
+    <br>
+    <br>
+    <input type="submit" value="Submit"> -->
+    <form method="POST">
+        <input name="text" size="100">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

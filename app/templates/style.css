@@ -1,6 +1,11 @@
+/* Creates the background color for the page. */
+
 body {
-    background-color: linen;
+    background-color: beige;
 }
+
+
+/* Formats heading for the HTML page */
 
 h1 {
     text-align: center;
@@ -8,16 +13,25 @@ h1 {
     color: steelblue;
 }
 
+
+/* Formats the borders of the field boxes. */
+
 form {
     margin: 20px auto;
     width: 320px;
     color: steelblue;
 }
 
+
+/* Creates the format for the input/text that the user will enter into the form */
+
 input {
     padding: 12px;
     font-size: inherit;
 }
+
+
+/* Creates the margin/border around the field boxes */
 
 input[type="text"] {
     display: block;
@@ -26,12 +40,18 @@ input[type="text"] {
     border: 2px solid steelblue;
 }
 
+
+/* Creates the margin/border for the "Subtitle" field box. */
+
 input[type="Subtitle"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
     border: 2px solid steelblue;
 }
+
+
+/* Creates the margin/border for the "Composer" field box. */
 
 input[type="Composer"] {
     display: block;
@@ -40,6 +60,9 @@ input[type="Composer"] {
     border: 2px solid steelblue;
 }
 
+
+/* Creates the margin/border for the "Lyricist" field box. */
+
 input[type="Lyricist"] {
     display: block;
     margin-bottom: 25px;
@@ -47,12 +70,18 @@ input[type="Lyricist"] {
     border: 2px solid steelblue;
 }
 
+
+/* Creates the margin/border for the "Coopyright" field box. */
+
 input[type="Copyright"] {
     display: block;
     margin-bottom: 25px;
     width: 100%;
     border: 2px solid steelblue;
 }
+
+
+/* Creates the margin/border for the "Submit" button. */
 
 input[type="Submit and get started!"] {
     width: 344px;
@@ -62,6 +91,9 @@ input[type="Submit and get started!"] {
     color: white;
 }
 
+
+/* Formats the "Submit" button. */
+
 input[type="Submit and get started!"]:focus {
     width: 344px;
     height: 45px;
@@ -69,6 +101,9 @@ input[type="Submit and get started!"]:focus {
     background: white;
     color: steelblue;
 }
+
+
+/* Formats the background color of the field boxes. */
 
 input:focus {
     background-color: white;
