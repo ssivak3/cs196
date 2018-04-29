@@ -2,24 +2,51 @@
 <html>
 
 <head>
-    <title>textBox</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadenza</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='muspagestyle.css')}}">
+
+    <!-- Script tag below reads imports information from the JavaScript file that contains the music editor-->
+
     <script src="{{url_for('static', filename='vextab-div.js')}}"></script>
 
 </head>
+<h1>Cadenza</h1>
 
 <body>
     <div class="vex-tabdiv" editor="true">{{ notes }}</div>
-    <!-- <input type="text" name="textbox" size="100">
+    <br>
+    <br> Getting to know Cadenza
+    <br>
+    <br> In order to begin creating your masterpiece, you'll need to become familiar with some how Cadenza creates music.
     <br>
     <br>
-    <input type="submit" value="Submit"> -->
-    <form method="POST">
-        <input name="text" size="100">
-        <br>
-        <br>
-        <input type="submit">
-    </form>
+    <br> Powered by the VexFlow music notation language, Cadenze takes input from users that is written in VexTab. Below are some of the key commands you'll need to get started:
+    <br>
+    <br> "stave" - Generate a new staff.
+    <br>
+    <br> "tabstave" - Generate a tabstave (double staff); note that you can add as many of these as you'd like!
+    <br>
+    <br> "voice" - Creates a staff for voice compositions.
+    <br>
+    <br> "notation" - Set this equal to true AFTER you've created however many staffs using the above commands.
+    <br>
+    <br>
+    <br> Creating notes:
+    <br>
+    <br> Creating notes in Cadenza is a very simple process. Use the following command format as an example:
+    <br>
+    <br> notes D-E-G/4
+    <br>
+    <br> To add sharps, naturals, and flats to your composition, the previous command can be modified into the following:
+    <br>
+    <br> notes D#-En-G@/4
+    <br>
+    <br>
+    <br> A list of other useful commands to know to fully utilize Cadenza:
+    <br>
+    <br> "clef" - Set equal to treble, bass, alto, tenor, etc.
+    <br>
+
 </body>
 
 </html>
