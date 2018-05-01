@@ -1,13 +1,22 @@
-.body {
+/* Changes the background color of the page. */
+
+body {
     background: beige;
     text-align: center;
 }
 
+
+/* Centers and formats the header. */
+
 h1 {
+    background: beige;
     text-align: center;
     font-size: 20px;
     color: steelblue;
 }
+
+
+/* Aligns the music editor to the center of the page. */
 
 .vex-tab {
     text-align: center;

@@ -19,12 +19,13 @@ from flask import Flask, render_template, request
 #     # insert here
 
 
-# Reads the HTML from "musicpage.html" and processes it to generate notes.
+
+# Reads the HTML from "musicpage.html" and processes it to render the music editor.
 @app.route('/')
 def music_page():
     return render_template('musicpage.html', notes="")
 
-# Renders template for the music score to be displayed.
+# Requests the text that is inputted by the user to be formatted into notes.
 @app.route('/', methods=['POST'])
 def music_page_post():
     text = request.form['text']

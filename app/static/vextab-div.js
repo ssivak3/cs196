@@ -1,8 +1,5 @@
 /**
- * VexTab 2.0.13 built on 2016-07-10.
- * Copyright (c) 2010 Mohit Muthanna Cheppudira <mohit@muthanna.com>
- *
- * http://www.vexflow.com  http://github.com/0xfe/vextab
+ * The Cadenza music editor, adapted from VexFlow and the VexTab programming language.
  */
 
 (function(f) {

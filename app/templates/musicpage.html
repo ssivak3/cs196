@@ -11,20 +11,21 @@
 
 </head>
 <h1>Cadenza</h1>
+<!-- Starter's guide to using Cadenza that is displayed every time you create a new score. -->
 
 <body>
     <div class="vex-tabdiv" editor="true">{{ notes }}</div>
     <br>
-    <br> Getting to know Cadenza
+    <br> Getting to know Cadenza:
     <br>
     <br> In order to begin creating your masterpiece, you'll need to become familiar with some how Cadenza creates music.
     <br>
     <br>
     <br> Powered by the VexFlow music notation language, Cadenze takes input from users that is written in VexTab. Below are some of the key commands you'll need to get started:
     <br>
-    <br> "stave" - Generate a new staff.
+    <br> "stave" - Generate a new staff, and you can create as many of these as you'd like.
     <br>
-    <br> "tabstave" - Generate a tabstave (double staff); note that you can add as many of these as you'd like!
+    <br> "tabstave" - Generate a tabstave (double staff); typically used for guitar compositions.
     <br>
     <br> "voice" - Creates a staff for voice compositions.
     <br>
@@ -41,10 +42,41 @@
     <br>
     <br> notes D#-En-G@/4
     <br>
+    <br> To add rests, insert two hashes (##) after the set of notes you've created. For example:
+    <br>
+    <br> notes D-E-F/4 ##
+    <br>
+    <br>
+    <br> Expanding your compositions:
+    <br>
+    <br> To create a new measure in your composition, insert " | " after the first set of notes you've created. For example:
+    <br>
+    <br> notes D-E-F-G/4 | D-E-F/4 ##
+    <br>
     <br>
     <br> A list of other useful commands to know to fully utilize Cadenza:
     <br>
     <br> "clef" - Set equal to treble, bass, alto, tenor, etc.
+    <br>
+    <br> "tablature" - Set equal to true, or don't declare at all if you'd like the tabstave to be present beneath your notation stave, and false if you wish to remove it.
+    <br>
+    <br> :8 - Place before your string of notes to create eighth notes. See the following for an example:
+    <br>
+    <br> notes :8 D-E-F/4
+    <br>
+    <br> :16 - Place before your string of notes to create sixteenth notes.
+    <br>
+    <br> :32 - Place before your string of notes to create thirty-second notes.
+    <br>
+    <br> || Double Bar
+    <br>
+    <br> |: Repeat Begin
+    <br>
+    <br> :| Repeat End
+    <br>
+    <br> :: Double Repeat
+    <br>
+    <br> |= End Bar
     <br>
 
 </body>
