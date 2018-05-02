@@ -1,0 +1,68 @@
+<!--html for register page-->
+{% extends "base.html" %}
+
+
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+{% block content %}
+<form class="form-horizontal" action='/login/signup' method="POST">
+  <fieldset>
+    <div id="legend">
+      <legend class="">register</legend>
+    </div>
+    <div class="control-group">
+      <!-- Username -->
+      <p class="help-block">username can contain any letters or numbers</p>
+      <label class="control-label"  for="username">username</label>
+      <div class="controls">
+        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+
+      </div>
+    </div>
+
+    <div class="control-group">
+      <!-- E-mail -->
+      <p class="help-block">enter your email</p>
+      <label class="control-label" for="email">email</label>
+      <div class="controls">
+        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+      </div>
+    </div>
+
+    <div class="control-group">
+      <!-- Password-->
+      <p class="help-block">enter a password</p>
+      <label class="control-label" for="password">password</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+      </div>
+    </div>
+    <br>
+
+    <!--<div class="control-group">
+      <!-- Password
+      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+      <div class="controls">
+        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+        <p class="help-block">Please confirm password</p>
+      </div>
+    </div>-->
+
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">register</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<style>
+html {
+  text-align:center;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,62 @@
+<!--html for login page-->
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+		<div class="span12">
+			<form class="form-horizontal" action='' method="POST">
+			  <fieldset>
+			    <div id="legend">
+			      <legend class="">login</legend>
+			    </div>
+			    <div class="control-group">
+            <br>
+			      <!-- Username -->
+			      <label class="control-label"  for="username">username</label>
+			      <div class="controls">
+			        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+			      </div>
+			    </div>
+			    <div class="control-group">
+            <br>
+			      <!-- Password-->
+			      <label class="control-label" for="password">password</label>
+			      <div class="controls">
+			        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+			      </div>
+			    </div>
+			    <div class="control-group">
+            <br>
+			      <!-- Button -->
+			      <div class="controls">
+			        <button class="btn btn-success">Login</button>
+			      </div>
+			    </div>
+			  </fieldset>
+			</form>
+		</div>
+
+
+	</div>
+</div>
+
+<style>
+html {
+  text-align: center;
+}
+</style>
+
+
+<!--<form class="register-form">
+  <label>email</label>
+  <input type="text" class="form-control" placeholder="Email">
+  <label>password</label>
+  <input type="password" class="form-control" placeholder="Password">
+  <button class="btn btn-danger btn-block btn-round">log in</button>
+</form>
+<div class="forgot">
+  <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+</div>-->
+{% endblock %}

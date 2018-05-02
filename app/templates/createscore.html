@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- page to receive user input on score information -->
+
+<!--<head>
+    <title>Create New Score</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+
+
+<body>
+    <h1>create new score</h1><br>
+    <form method="POST" action="music.html">
+        <input type="text" placeholder="enter title">
+        <br>
+        <br>
+        <br>
+        <input type="text" placeholder="enter composer">
+        <br>
+        <br>
+        <br>
+        <!--<input type="text" placeholder="Enter lyricist, if any">
+        <input type="text" placeholder="Copyright if desired">-->
+        <input type="text" placeholder="time signature">
+        <br>
+        <br>
+        <br>
+        <input type="text" placeholder="key signature">
+        <br>
+        <br>
+        <br>
+        <button class=btn btn-link btn-warning>submit</button>
+    </form>
+
+</body>
+<style>
+body {
+  text-align: center;
+}
+</style>
+{% endblock %}
