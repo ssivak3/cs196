@@ -1,0 +1,36 @@
+<!--page that renders score-->
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>cadenza</title>
+    <h3> type stave to begin </h3>
+    <script src="{{url_for('static', filename='vex/vextab-div.js')}}"></script>
+
+</head>
+
+<body>
+    <div class="vex-tabdiv" editor="true">{{ notes }}</div>
+    <form method="POST">
+        <br>
+        <br>
+      <!--  <button class=btn btn-link btn-danger>submit</button>-->
+    </form>
+</body>
+<style>
+.vex-tabdiv {
+  text-align: center;
+}
+body {
+  text-align: center;
+}
+head {
+  text-align: center;
+}
+</style>
+
+</html>
+{% endblock %}
